@@ -88,7 +88,7 @@ and open the template in the editor.
     </head>
     <body>	
         <div id="container">
-            <?php include 'header.php'; ?>
+            
         </div>
         <div class="container">
             <?php

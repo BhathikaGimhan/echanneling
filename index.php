@@ -122,12 +122,7 @@ img {
         <div class="w3-display-container row justify-content-md-center w3-padding w3-margin-top">  
             <form action="search_Doc_QuickMenu.php" id="show"  method="post" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin " style="width:500px;">
             <h2 class="w3-center">Channel Your Doctor</h2>
-            <div class="w3-row w3-section">
-              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user-md"></i></div>
-                <div class="w3-rest">
-                  <input class="form-control" id="name" name="name" placeholder="Doctor's Name" type="text"/>
-                </div>
-            </div>
+          
 
             <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-stethoscope custom"></i></div>
@@ -145,14 +140,18 @@ img {
                         $spec[0] = "Dental";
                     }
                     elseif ($spec[0] == 3){
-                        $spec[0] = "VOG";
+                        $spec[0] = "Surgeon";
                     }
+                    elseif ($spec[0] == 4){
+                      $spec[0] = "VP";
+                  }
                   ?>
                     <option value="<?php echo $spec[0]; ?>"><?php echo $spec[0]; ?></option>
+                    
                   <?php
                     }
                   ?>
-                </select>
+                </select>-
               </div>
           </div>
 
