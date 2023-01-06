@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>| ABC E-Channel |</title>
+        <title></title>
         <link rel="stylesheet" href="src/w3.css">
         <link rel="stylesheet" href="src/latin_font.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

@@ -14,7 +14,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>| ABC E-Channel |</title>
+        <title>||</title>
         <link rel="stylesheet" href="src/w3.css">
         <link rel="stylesheet" href="src/latin_font.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -100,14 +100,14 @@ and open the template in the editor.
     </head>
     <body>	
         <div id="container">
-            <?php include 'header_after_log.php'; ?>
+            <?php include './header_after_log.php'; ?>
         </div>
         <div class="container">
             <?php
             $servername = "localhost";
             $username = "root";
             $password = "";
-            $dbname = "echannelling";
+            $dbname = "channel";
 
 // Create connection
             $conn = mysqli_connect($servername, $username, $password, $dbname);

@@ -70,7 +70,7 @@ button:hover {
 </head>
 <body>
 <div id="container">
-            <?php include 'header.php'; ?>
+           
 </div>
 
       <!--  <div class="w3-display-container w3-content img-responsive"  style="max-width:1500px; height:500px">

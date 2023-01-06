@@ -34,8 +34,7 @@ h1,h2,h3,h4,h5,h6 {
     <a href="patient/my_bookings.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY BOOKINGS</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOCTORS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="./patient/register_patient.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PATIENTS</a>
-    <a href="./pay.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RECEPTIONIST</a>
+    
 
     <div class="w3-dropdown-hover w3-hide-small">
     </div>

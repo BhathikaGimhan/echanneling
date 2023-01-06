@@ -138,6 +138,12 @@
       }
 
       footer {
+
+        text-align: center;
+        padding: 5px;
+        background-color: #2b2a33;
+        color: #fff;
+        
       }
     </style>
   </head>
@@ -161,20 +167,29 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./homepage.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="./contactbeforelog.php">Contact</a>
             </li>
           </ul>
           <div class="dropdown">
             <button
-              class="btn btn-primery"
+              class="btn btn-primery dropdown-toggle"
               type="button"
               id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
               Login here
             </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="./login_Form.php">Login as a patient</a></li>
+              <li><a class="dropdown-item" href="#">Login as a Doctor</a></li>
+            </ul>
+          </div>
+          
+    
           </div>
         </div>
       </div>

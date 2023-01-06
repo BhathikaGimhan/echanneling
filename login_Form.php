@@ -374,7 +374,7 @@ img {
 
 <div id="container form-area">
              
-            <?php include 'navbarHome.php'; ?>
+           
         
         </div>
         <div class="w3-display-container w3-content img-responsive form-area"  style="max-width:1500px; height:500px">
@@ -418,7 +418,7 @@ img {
 
     <div class="w3-row w3-section w3"><div class=""><div class="panel-footer">
     								
-                   					 No Worries, <a href="reset_pw.php" style="text-decoration:underline">Click Here</a> to get New password or <a href="register_patient.php" style="text-decoration:underline">Create an Account</a>
+                   					 No Worries, <a href="reset_pw.php" style="text-decoration:underline">Click Here</a> to get New password or <a href="./register_patient.php" style="text-decoration:underline">Create an Account</a>
                     
   									</div></div></div>
 

@@ -30,9 +30,10 @@ $name=$_SESSION['name'];
 <body>
 <!-- Navbar -->
 <div class="w3-top ">
-  <div class="w3-bar w3-indigo w3-card w3-padding ">
+  <div class="w3-bar w3-white w3-card w3-padding ">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="../homepage.php" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large">CHANNEL</a>
     <a href="search_Doc.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOCTORS</a>
     <a href="contact.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <div class="w3-dropdown-hover w3-hide-small">

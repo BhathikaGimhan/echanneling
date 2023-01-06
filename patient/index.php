@@ -8,7 +8,7 @@ include('db.php');
 		
 	}
 	else{
-	header("location:../login_Form.php")	;
+	header("location:../hompage.php")	;
 	}
 	
 ?>
@@ -36,13 +36,8 @@ include('db.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
 
     <style>
-        
-img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
+
+
 #show{
   border-radius: 30px;
   transition: 600ms;
@@ -53,6 +48,27 @@ img {
 }
 #show button{
   border-radius:30px;
+}
+
+
+body{
+  background-image:url("../images/group-five-laughing-successful-doctors-standing-together.jpg");
+  background-size:cover;
+
+}
+.text_con{
+  background-color:rgba(255, 255, 255, 0.924);
+  padding:40px;
+  border-radius:20px ;
+  box-shadow: 1px 3px 26px 8px rgba(0,0,0,0.75);
+
+}
+
+
+.card{
+ position: absolute;
+ top:0;
+ margin-right:500px;
 }
 .round{
   border-radius: 20px;
@@ -80,14 +96,22 @@ img {
     </style>
 </head>
 
-<body>
+<body >
 
 <div id="container">
     <?php include 'header_after_log.php'; ?>
 </div>
 
 
-<div class="w3-display-container w3-content img-responsive"  style="max-width:1500px; height:500px">
+
+
+<div  style=" display:flex; align-items:center; max-width:60%; margin:200px 160px; ">
+
+<div class="text_con">
+          <h1>Channel Your Doctor</h1>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident amet voluptatem asperiores molestiae temporibus blanditiis modi iure aliquam consequuntur voluptate?</p>
+        </div>
 		
         <!-- <img src="images/Global-Health-01.jpg" alt="Table" class="imge" style="max-width:2500px; height:740px"> -->
         
@@ -127,14 +151,14 @@ img {
   <img src="img/logo.jpeg" alt="">
 </div> -->
 
-        <div class="w3-display-container row justify-content-md-center w3-padding w3-margin-top">  
-            <form action="search_Doc_QuickMenu.php" id="show"  method="post" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin " style="width:500px;">
+        <div class="w3-display-container row justify-content-md-center w3-padding w3-margin-top card">  
+
+        
+            <form action="search_Doc_QuickMenu.php" id="show"  method="post" class="w3-container w3-card-4  w3-text-blue w3-margin " style="width:500px; background:#2b2a33">
             <h2 class="w3-center">Channel Your Doctor</h2>
             <div class="w3-row w3-section">
-              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user-md"></i></div>
-                <div class="w3-rest">
-                  <input class="form-control" id="name" name="name" placeholder="Doctor's Name" type="text"/>
-                </div>
+             
+               
             </div>
 
             <div class="w3-row w3-section">
@@ -199,7 +223,7 @@ img {
         </div>
         </div>
  </div>
- <img src="../upload/Healthora logo png(1).png" class="imageBg" width="550px" height="450px" alt="">
+
 
   <br>
 <!-- Footer -->

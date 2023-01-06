@@ -141,7 +141,7 @@ img {
                     }
                     elseif ($spec[0] == 3){
                         $spec[0] = "Surgeon";
-                    }
+                    }                                             
                     elseif ($spec[0] == 4){
                       $spec[0] = "VP";
                   }

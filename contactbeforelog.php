@@ -88,6 +88,8 @@ and open the template in the editor.
     </head>
     <body>	
         <div id="container">
+
+        <?php include './HeaderBefore.php'?>
             
         </div>
         <div class="container">
@@ -95,7 +97,7 @@ and open the template in the editor.
             $servername = "localhost";
             $username = "root";
             $password = "";
-            $dbname = "echannelling";
+            $dbname = "channel";
 
 // Create connection
             $conn = mysqli_connect($servername, $username, $password, $dbname);

@@ -1,3 +1,125 @@
+<?php 
+include('db.php');
+?>
+<?php
+  if(isset($_POST['submit'])){
+		$name = $_POST['name'];
+		$Address = $_POST['address'];
+		$NIC_number = $_POST['nic'];
+		$telephoneM = $_POST['tpm'];
+		$telephoneH = $_POST['tph'];
+		$email = $_POST['email'];
+		$User_Name = $_POST['un'];
+		$password = $_POST['pw'];
+		$userCategory = 3;
+
+        $encrypt = md5($password);
+		
+		$query="INSERT INTO userlogin (userName,password,userCategory) VALUES('".$User_Name."','".$encrypt."','".$userCategory."')";
+		
+	
+	$query3 = "SELECT * FROM userlogin WHERE userName='".$User_Name."'";
+				$result = mysqli_query($conn, $query3);
+    			$rowss = mysqli_num_rows($result);
+//Check if there are no duplicate Primary keys				
+if($rowss >0){
+				echo "<div id='myModal1' class='modal fade' role='dialog'>
+					  <div class='modal-dialog'>
+					
+						<!-- Modal content-->
+						<div class='modal-content'>
+						  <div class='modal-header bg-danger text-white'>
+							
+							
+							<h4 class='modal-title'>'".$User_Name."' is already Registed. </h4>
+							<button type='button' class='close' data-dismiss='modal'>&times;</button>
+						  </div>
+						  <div class='modal-body'>
+							<p>Try Again with Different UserName!!.</p>
+						  </div>
+						  <div class='modal-footer'>
+							<button type='button' class='btn btn-danger' data-dismiss='modal'>Close</button>
+						  </div>
+						</div>
+					
+					  </div>
+					</div> ";
+	
+}else{
+	//execute insert userLogin						
+    if (mysqli_query($conn, $query)) {
+		$queryNew = mysqli_query($conn,"SELECT max(id) from userlogin" );  
+		//get that id and Save other details
+		while($row=mysqli_fetch_array($queryNew)){
+					$lastid = $row['max(id)'];		
+					$query2= "INSERT INTO patient(id,patientName,address,NIC,telNo,telHome,email) VALUES('".$lastid."','".$name."','".$Address."','".$NIC_number."','".$telephoneM."','".$telephoneH."','".$email."')";
+					
+					//insert in patient Table
+					
+					if(mysqli_query($conn, $query2)){
+					echo "<div id='myModal1' class='modal fade' role='dialog'>
+					  <div class='modal-dialog'>
+					
+						<!-- Modal content-->
+						<div class='modal-content'>
+						  <div class='modal-header bg-success text-white'>
+							
+							
+							<h4 class='modal-title'>Success</h4>
+							<button type='button' class='close' data-dismiss='modal'>&times;</button>
+						  </div>
+						  <div class='modal-body'>
+							<p>Successfully Registered Patient!!.</p>
+						  </div>
+						  <div class='modal-footer'>
+							<button type='button' class='btn btn-success' data-dismiss='modal'>Close</button>
+						  </div>
+						</div>
+					
+					  </div>
+					</div> ";
+					}
+					
+					else{
+						echo "<div id='myModal1' class='modal fade' role='dialog'>
+					  <div class='modal-dialog'>
+					
+						<!-- Modal content-->
+						<div class='modal-content'>
+						  <div class='modal-header bg-danger text-white'>
+							
+							
+							<h4 class='modal-title'>Register Failed!</h4>
+							<button type='button' class='close' data-dismiss='modal'>&times;</button>
+						  </div>
+						  <div class='modal-body'>
+							<p>Try Again!!.</p>
+						  </div>
+						  <div class='modal-footer'>
+							<button type='button' class='btn btn-danger' data-dismiss='modal'>Close</button>
+						  </div>
+						</div>
+					
+					  </div>
+					</div> ";	
+						
+						
+					}
+					
+					
+			}
+		} 
+	
+	}
+		
+		
+	
+            
+   mysqli_close($conn);
+  }
+ ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,7 +192,7 @@ button:hover {
 </head>
 <body>
 <div id="container">
-            <?php include 'header.php'; ?>
+            
 </div>
 
       <!--  <div class="w3-display-container w3-content img-responsive"  style="max-width:1500px; height:500px">

@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5,h6 {
   <div class="w3-bar w3-indigo w3-card">
   <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.php" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOCTORS</a>
+
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <div class="w3-dropdown-hover w3-hide-small">
       </div>
