@@ -1,8 +1,7 @@
 <?php
 include('../db.php');
-
 session_start();
-$uid=$_SESSION['sid'];
+// $uid=$_SESSION['sid'];
 
 
 ?>
