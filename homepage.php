@@ -185,7 +185,7 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="./login_Form.php">Login as a patient</a></li>
-              <li><a class="dropdown-item" href="#">Login as a Doctor</a></li>
+             
             </ul>
           </div>
           
