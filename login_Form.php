@@ -370,7 +370,13 @@ img {
 }
 </style>
 </head>
+
+
 <body class="form-area">
+
+<div class="container-fluid">
+    <?php include './HeaderBefore.php'?>
+</div>
 
 <div id="container form-area">
              
